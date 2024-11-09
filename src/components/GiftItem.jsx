@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 
 const GiftItem = ({ title, url }) => {
   // console.log(title)
@@ -8,5 +10,8 @@ const GiftItem = ({ title, url }) => {
     </div>
   )
 }
-
-export default GiftItem
+GiftItem.propTypes ={
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
+}
+export default GiftItem;
